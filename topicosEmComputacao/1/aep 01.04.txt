@@ -1,0 +1,22 @@
+Seja L = {w pertence a {a,b,c,d}* | w possui a subcadeia abcd} reconhecida pelo AFND com
+
+M = (E = {q0,q1,q2,q3,q4}, Alfabeto = {a,b,c,d}, t, I = {q0}, F = {q4}) e
+
+t(q0,a) = {q0,q1}	t(q0,b) = {q0}	t(q0,c) = {q0}	t(q0,d) = {q0}
+
+t(q1,a) = { }		t(q1,b) = {q2}	t(q1,c) = { }	t(q1,d) = { }
+
+t(q2,a) = { }		t(q2,b) = { }	t(q2,c) = {q3}	t(q2,d) = { }
+
+t(q3,a) = { }		t(q3,b) = { }	t(q3,c) = { }	t(q3,d) = {q4}
+
+t(q4,a) = {q4}		t(q4,b) = {q4}	t(q4,c) = {q4}	t(q4,d) = {q4}
+
+a) Encontre o AFD equivalente
+
+b) Minimize o AFD
+
+
+OBS: considere que nas transições acima, t(qx,a) = {qy} representa uma transição de qx com o símbolo a para o estado qy
+
+OBS: considere que nas transições acima, t(qx,b) = {} representa que não existe transição de qx com o símbolo
