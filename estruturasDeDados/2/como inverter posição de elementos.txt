@@ -1,0 +1,6 @@
+pra trocar posição do primeiro elemento com o ultimo:
+
+*faça o ultimo elemento apontar para o próximo do primeiro
+*faça o primeiro elemento apontar para NULL
+*faça o ultimo-1 elemento apontar para o primeiro
+*faça o ultimo elemento receber o ponteiro de inicio
