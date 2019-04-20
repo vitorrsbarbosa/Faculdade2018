@@ -1,0 +1,70 @@
+# Project: jogo
+# Makefile created by Dev-C++ 5.9.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = ligaDesliga.o iniciaJogo.o destroiLista.o mostraCor.o escolheCor.o jogar.o fimBrilho.o menu.o desenhaCor.o mostrarSequencia.o sorteiaEInsereCor.o sorteiaEInsereCorAvancado.o tocaSom.o esconderCursor.o main.o
+LINKOBJ  = ligaDesliga.o iniciaJogo.o destroiLista.o mostraCor.o escolheCor.o jogar.o fimBrilho.o menu.o desenhaCor.o mostrarSequencia.o sorteiaEInsereCor.o sorteiaEInsereCorAvancado.o tocaSom.o esconderCursor.o main.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = jogo.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+ligaDesliga.o: ligaDesliga.cpp
+	$(CPP) -c ligaDesliga.cpp -o ligaDesliga.o $(CXXFLAGS)
+
+iniciaJogo.o: iniciaJogo.cpp
+	$(CPP) -c iniciaJogo.cpp -o iniciaJogo.o $(CXXFLAGS)
+
+destroiLista.o: destroiLista.cpp
+	$(CPP) -c destroiLista.cpp -o destroiLista.o $(CXXFLAGS)
+
+mostraCor.o: mostraCor.cpp
+	$(CPP) -c mostraCor.cpp -o mostraCor.o $(CXXFLAGS)
+
+escolheCor.o: escolheCor.cpp
+	$(CPP) -c escolheCor.cpp -o escolheCor.o $(CXXFLAGS)
+
+jogar.o: jogar.cpp
+	$(CPP) -c jogar.cpp -o jogar.o $(CXXFLAGS)
+
+fimBrilho.o: fimBrilho.cpp
+	$(CPP) -c fimBrilho.cpp -o fimBrilho.o $(CXXFLAGS)
+
+menu.o: menu.cpp
+	$(CPP) -c menu.cpp -o menu.o $(CXXFLAGS)
+
+desenhaCor.o: desenhaCor.cpp
+	$(CPP) -c desenhaCor.cpp -o desenhaCor.o $(CXXFLAGS)
+
+mostrarSequencia.o: mostrarSequencia.cpp
+	$(CPP) -c mostrarSequencia.cpp -o mostrarSequencia.o $(CXXFLAGS)
+
+sorteiaEInsereCor.o: sorteiaEInsereCor.cpp
+	$(CPP) -c sorteiaEInsereCor.cpp -o sorteiaEInsereCor.o $(CXXFLAGS)
+
+sorteiaEInsereCorAvancado.o: sorteiaEInsereCorAvancado.cpp
+	$(CPP) -c sorteiaEInsereCorAvancado.cpp -o sorteiaEInsereCorAvancado.o $(CXXFLAGS)
+
+tocaSom.o: tocaSom.cpp
+	$(CPP) -c tocaSom.cpp -o tocaSom.o $(CXXFLAGS)
+
+esconderCursor.o: esconderCursor.cpp
+	$(CPP) -c esconderCursor.cpp -o esconderCursor.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
