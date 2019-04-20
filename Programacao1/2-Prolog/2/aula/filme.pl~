@@ -1,0 +1,8 @@
+%pessoa(Nome, Sexo, Idade, Altura, Peso)
+
+pessoa(Ana, F, 23, 1.55, 56.0).
+pessoa(Bia, F, 19, 1.71, 61.0).
+pessoa(Ivo, M, 22, 1.80, 70.5).
+pessoa(Lia, F, 17, 1.85, 57.3).
+pessoa(Eva, F, 28, 1.75, 68.7).
+pessoa(Ary, M, 25, 1.72, 68.9).

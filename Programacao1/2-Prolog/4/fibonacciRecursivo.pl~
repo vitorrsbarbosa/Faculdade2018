@@ -1,0 +1,9 @@
+%fib(Numero,fibonacci)
+
+fib(0,1).
+fib(N,F):-
+	N>0,
+	R is N-1,
+	M is N-2,
+	fib(M,R),
+	F is N+M+R.

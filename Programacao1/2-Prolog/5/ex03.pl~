@@ -1,0 +1,10 @@
+%rota(primeiro,segundo,distancia).
+
+rota(A,B,25).
+rota(A,D,23).
+rota(D,C,14).
+rota(D,F,30).
+rota(C,F,28).
+rota(C,B,19).
+rota(B,E,32).
+rota(E,F,26).

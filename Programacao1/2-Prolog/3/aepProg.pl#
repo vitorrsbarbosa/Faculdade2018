@@ -1,0 +1,22 @@
+%marca(id, nome)
+marca(VW,Volkswagem).
+marca(Ford,Ford).
+marca(GM,GeneralMotors).
+marca(Fiat,Fiat).
+marca(Renault,Renault).
+marca(MB,MercedesBenz).
+%carro(id,modelo
+carro(VW,Fox,2005,preto);
+insert into carros values('VW','Fox',2008,'preto');
+insert into carros values('Ford','Ecosport',2009,'verde');
+insert into carros values('Ford','KA',2008,'prata');
+insert into carros values('Fiat','Punto',2008,'branco');
+insert into carros values('Fiat','Uno',2007,'preto');
+insert into carros values('Fiat','Uno',2005,'prata');
+insert into carros values('Fiat','Stilo',2008,'verde');
+insert into carros values('Fiat','Uno',2009,'branco');
+insert into carros values('Peugeot','207',2010,'prata');
+insert into carros values('Peugeot','207',2010,'prata');
+insert into carros values('Peugeot','207',2007,'azul');
+insert into carros values('Chrysler','300 C',2008,'verde');
+insert into carros values('Fiat','Stilo',200,'4prata');

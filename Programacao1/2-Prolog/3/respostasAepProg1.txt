@@ -1,0 +1,13 @@
+2) Realize as seguinte consulta no Prolog:
+a) Apresente os nomes dos carros que possuam a cor verde
+  ford, fiat, chrysler;
+b) Apresente os nomes e ano dos carros que sejam da marca Fiat e branco
+  Fiat Punto 2008, Fiat Uno 2009;
+c) Apresente os nome e a cor dos carros que foram fabricados a partir de 2009
+  Ecosport 2009 verde, Uno 2009 branco, 207 2010 prata(x2);
+d) Aproveite a consulta (d) e acrescente a condição de não possuírem a cor branco
+  Ecosport 2009 verde, 207 2010 prata(x2);
+e) Apresente os nomes dos carros e nome das marcas dos carros da Ford que tenham cor verde e não forem Ecosport.
+  Falso;
+  
+  

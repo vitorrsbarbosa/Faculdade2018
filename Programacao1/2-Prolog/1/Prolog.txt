@@ -1,0 +1,2 @@
+fracamente tipada
+variaveis começam com maiúscula ou com _
